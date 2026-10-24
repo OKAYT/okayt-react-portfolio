@@ -1899,3 +1899,12 @@ body.cursor-hover .cursor-dot { background: var(--neon); box-shadow: 0 0 10px va
   letter-spacing: 0.08em;
   opacity: 0.85;
 }
+/* Fade-only reveal for elements that already use a tilt transform */
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 0.6s var(--ease);
+}
+
+.reveal-fade.in-view {
+  opacity: 1;
+}
