@@ -37,6 +37,7 @@ export default function Navbar({ scrolled }: { scrolled: boolean }) {
                 key={l.to}
                 to={l.to}
                 end={l.to === "/"}
+                className={({ isActive }) => (isActive ? "is-active" : "")}
                 onClick={() => setOpen(false)}
               >
                 {l.label}
